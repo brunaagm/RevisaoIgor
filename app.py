@@ -4,7 +4,7 @@ from controllers.questionarioController import questionarioController
 app = Flask(__name__)
 app.secret_kay = "brunalinda"
 
-rotas_publicas = ["questoes.index", "questoes.verifica"]
+rotas_publicas = ["questoes.index", "questoes.verifica"] 
 
 @app.before_request #criação do middleware
 def verificarIdentificação():
